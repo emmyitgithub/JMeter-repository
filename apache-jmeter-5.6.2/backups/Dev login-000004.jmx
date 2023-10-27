@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.2">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="RECORD 10-19-23 3.02.17 PM" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.3.1.23. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">false</boolProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="sec-ch-ua" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua</stringProp>
+            <stringProp name="Header.value">&quot;Chromium&quot;;v=&quot;118&quot;, &quot;Google Chrome&quot;;v=&quot;118&quot;, &quot;Not=A?Brand&quot;;v=&quot;99&quot;</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-mobile" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+            <stringProp name="Header.value">?0</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-platform" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+            <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+          </elementProp>
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="BASE_URL_1" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_1</stringProp>
+            <stringProp name="Argument.value">careiob2c.b2clogin.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_2" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_2</stringProp>
+            <stringProp name="Argument.value">api-authentication-eastus2-dev.azurewebsites.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_3" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_3</stringProp>
+            <stringProp name="Argument.value">apiapp-dal-useast2-dev.azurewebsites.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_4" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_4</stringProp>
+            <stringProp name="Argument.value">webapp-careio-useast2-dev.azurewebsites.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_5" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_5</stringProp>
+            <stringProp name="Argument.value">www.cloudflare.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_6" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_6</stringProp>
+            <stringProp name="Argument.value">apiapp-inbox-eastus2-dev.azurewebsites.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_7" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_7</stringProp>
+            <stringProp name="Argument.value">cdn.ckeditor.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <boolProp name="HTTPSampler.image_parser">true</boolProp>
+        <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+        <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list"/>
+        <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <stringProp name="LoopController.loops">2</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">05</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Test" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://careiob2c.b2clogin.com/account.care.io/B2C_1_SignUpIn/SelfAsserted?tx=StateProperties=eyJUSUQiOiJiY2JjMDg2My00ZDhjLTQ0YmMtYTVkMi0xMTEwZTJmOWQ4ZDQifQ&amp;p=B2C_1_SignUpIn" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="p" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">p</stringProp>
+                  <stringProp name="Argument.value">B2C_1_SignUpIn</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="tx" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">tx</stringProp>
+                  <stringProp name="Argument.value">StateProperties=eyJUSUQiOiJiY2JjMDg2My00ZDhjLTQ0YmMtYTVkMi0xMTEwZTJmOWQ4ZDQifQ</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="password" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">password</stringProp>
+                  <stringProp name="Argument.value">BankLogin!@33</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="request_type" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">request_type</stringProp>
+                  <stringProp name="Argument.value">RESPONSE</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="email" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">email</stringProp>
+                  <stringProp name="Argument.value">amol.ahire@care.io</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">account.care.io/B2C_1_SignUpIn/SelfAsserted</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="X-CSRF-TOKEN" elementType="Header">
+                  <stringProp name="Header.name">X-CSRF-TOKEN</stringProp>
+                  <stringProp name="Header.value">MzF6d25HMGh4bTNLbjBEdEl6a1lHNk1RVHByVFA4S0lmRzZyKzM3MVlRWVk0MGYwcG5CZ3JRY3lLZU9tb1JZaHNBdXFqUE9wb3RUTDhiSTNyNHJuMnc9PTsyMDIzLTEwLTE5VDA5OjMxOjU4LjA5NDQxNzZaO3JTTzRIb2ZZeHV1ZkJHS3cvSnp4aUE9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+                <elementProp name="X-Requested-With" elementType="Header">
+                  <stringProp name="Header.name">X-Requested-With</stringProp>
+                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://careiob2c.b2clogin.com/account.care.io/B2C_1_SignUpIn/api/CombinedSigninAndSignup/confirmed?rememberMe=false&amp;csrf_token=MzF6d25HMGh4bTNLbjBEdEl6a1lHNk1RVHByVFA4S0lmRzZyKzM3MVlRWVk0MGYwcG5CZ3JRY3lLZU9tb1JZaHNBdXFqUE9wb3RUTDhiSTNyNHJuMnc9PTsyMDIzLTEwLTE5VDA5OjMxOjU4LjA5NDQxNzZaO3JTTzRIb2ZZeHV1ZkJHS3cvSnp4aUE9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJiY2JjMDg2My00ZDhjLTQ0YmMtYTVkMi0xMTEwZTJmOWQ4ZDQifQ&amp;p=B2C_1_SignUpIn&amp;diags=%7B%22pageViewId%22%3A%223dab8e26-ede8-4573-9aa6-35cc145c21ba%22%2C%22pageId%22%3A%22CombinedSigninAndSignup%22%2C%22trace%22%3A%5B%7B%22ac%22%3A%22T005%22%2C%22acST%22%3A1697707917%2C%22acD%22%3A3%7D%2C%7B%22ac%22%3A%22T021%20-%20URL%3Ahttps%3A%2F%2Fb2ccustomization.blob.core.windows.net%2Froot%2Fcustomize-ui.html%22%2C%22acST%22%3A1697707917%2C%22acD%22%3A979%7D%2C%7B%22ac%22%3A%22T019%22%2C%22acST%22%3A1697707918%2C%22acD%22%3A12%7D%2C%7B%22ac%22%3A%22T004%22%2C%22acST%22%3A1697707918%2C%22acD%22%3A8%7D%2C%7B%22ac%22%3A%22T003%22%2C%22acST%22%3A1697707919%2C%22acD%22%3A6%7D%2C%7B%22ac%22%3A%22T035%22%2C%22acST%22%3A1697707919%2C%22acD%22%3A0%7D%2C%7B%22ac%22%3A%22T030Online%22%2C%22acST%22%3A1697707919%2C%22acD%22%3A0%7D%2C%7B%22ac%22%3A%22T002%22%2C%22acST%22%3A1697707953%2C%22acD%22%3A0%7D%2C%7B%22ac%22%3A%22T018T010%22%2C%22acST%22%3A1697707952%2C%22acD%22%3A1119%7D%5D%7D" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="p" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">p</stringProp>
+                  <stringProp name="Argument.value">B2C_1_SignUpIn</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="tx" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">tx</stringProp>
+                  <stringProp name="Argument.value">StateProperties=eyJUSUQiOiJiY2JjMDg2My00ZDhjLTQ0YmMtYTVkMi0xMTEwZTJmOWQ4ZDQifQ</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="csrf_token" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">csrf_token</stringProp>
+                  <stringProp name="Argument.value">MzF6d25HMGh4bTNLbjBEdEl6a1lHNk1RVHByVFA4S0lmRzZyKzM3MVlRWVk0MGYwcG5CZ3JRY3lLZU9tb1JZaHNBdXFqUE9wb3RUTDhiSTNyNHJuMnc9PTsyMDIzLTEwLTE5VDA5OjMxOjU4LjA5NDQxNzZaO3JTTzRIb2ZZeHV1ZkJHS3cvSnp4aUE9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="diags" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">diags</stringProp>
+                  <stringProp name="Argument.value">{&quot;pageViewId&quot;:&quot;3dab8e26-ede8-4573-9aa6-35cc145c21ba&quot;,&quot;pageId&quot;:&quot;CombinedSigninAndSignup&quot;,&quot;trace&quot;:[{&quot;ac&quot;:&quot;T005&quot;,&quot;acST&quot;:1697707917,&quot;acD&quot;:3},{&quot;ac&quot;:&quot;T021 - URL:https://b2ccustomization.blob.core.windows.net/root/customize-ui.html&quot;,&quot;acST&quot;:1697707917,&quot;acD&quot;:979},{&quot;ac&quot;:&quot;T019&quot;,&quot;acST&quot;:1697707918,&quot;acD&quot;:12},{&quot;ac&quot;:&quot;T004&quot;,&quot;acST&quot;:1697707918,&quot;acD&quot;:8},{&quot;ac&quot;:&quot;T003&quot;,&quot;acST&quot;:1697707919,&quot;acD&quot;:6},{&quot;ac&quot;:&quot;T035&quot;,&quot;acST&quot;:1697707919,&quot;acD&quot;:0},{&quot;ac&quot;:&quot;T030Online&quot;,&quot;acST&quot;:1697707919,&quot;acD&quot;:0},{&quot;ac&quot;:&quot;T002&quot;,&quot;acST&quot;:1697707953,&quot;acD&quot;:0},{&quot;ac&quot;:&quot;T018T010&quot;,&quot;acST&quot;:1697707952,&quot;acD&quot;:1119}]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="rememberMe" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">rememberMe</stringProp>
+                  <stringProp name="Argument.value">false</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">account.care.io/B2C_1_SignUpIn/api/CombinedSigninAndSignup/confirmed</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                  <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+              <stringProp name="RandomTimer.range">0.0</stringProp>
+              <stringProp name="ConstantTimer.delay">0</stringProp>
+              <stringProp name="TestPlan.comments">Recorded time was 0 milliseconds</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://api-authentication-eastus2-dev.azurewebsites.net/api/Login" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;Code&quot;:&quot;eyJraWQiOiJjcGltY29yZV8wOTI1MjAxNSIsInZlciI6IjEuMCIsInppcCI6IkRlZmxhdGUiLCJzZXIiOiIxLjAifQ..UEH_76ibQCckJr1f.DUPrE9DOodfviTx7BYRg5SCJxPdrjjGTn_gOZseapRoRwnq9V6Gu8XjQ9uHwidjFhs6FbC5ToqHq5q7ib5NODQ96OjSUm306GS5gcOBnl0golLNKCtPG7Rx1O7dfxHVbkJgtc4_qWBy1syLbnEW982jHitraCuzqWmwvchlBV92wFsWqnrXqAveWpiOv1UOD9PeLPuI6EFFwK2pm3jCgoaxBkKGF7C9lzzI2OOEy09t60nz_AewTY6MkOItlMCfVXKy7b0_fGgSl4D5K7x2yy-odOMqAm5Egp6r7GAi3WwjneAY6zJicL6xkDbJpCrI0OnaRIjfusVqV_f5eFBQBrCiD8NkhlPDYG2FA8mmNa45krFZFW_oqi0voIxAxIF1Edk8vhNKu9qibynUObvu5kYIJg3_hnk0kuvhHUxTdmILXcBi0ccECDsrMdSX3mL5T85VxFH1NUYZWLjCXesGEOXg3dSNLs2elzSogw7VFrtnsl0-dFmNMycPnmLlHnPty_MUMglPSuxXWUVMeVGHfnQgck_iKF6npFzBkQxCKEN8Fbn93AKE6acWWIot4E_EXQ_lM1wq-7KwZrfmFHUW-MIZT5rLUKFCvqIrO5vkGkAVPHq7jiol2M0n0EZCXNK0YIpMLy8I35rIGBD51mYL58YzhsjJSfS6y69cXJk4QKaLsUjp3ZlH2vGthna3so8Q0RE69v7B0XDnVBURLiwow_-7dGDtEHlnPHa5oi6EtmAUH7BnoA2MMOto1-Yvc.1wLRcPZ5w4aYwsnB-SQPuQ&quot;,&quot;CodeVerifier&quot;:&quot;AdFhBpk65QSz9YhmX7GFUR2C7l5CiV1Q-sgB5hmRQWE&quot;,&quot;AccessType&quot;:null}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">api/Login</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://apiapp-dal-useast2-dev.azurewebsites.net/api/Organization/list" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">api/Organization/list</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJvaWQiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdWIiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdHJlZXRBZGRyZXNzIjoiMjgxOTRiYTAtNDVkZC00MzNlLWEwZDgtMjJkNmFkZjFmYzBkIiwiZmFtaWx5X25hbWUiOiJhaGlyZSIsIm5hbWUiOiJBbW9sIEFoaXJlIiwiZW1haWxzIjpbImFtb2wuYWhpcmVAY2FyZS5pbyJdLCJ0ZnAiOiJCMkNfMV9TaWduVXBJbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwic2NwIjoiYWNjZXNzX2FzX3VzZXIiLCJhenAiOiJhZmY1ZmM0OC1jYjE1LTQ0ZmEtYjMyMS0wZTQ5YTFjMzUxNGUiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2OTc3MDc5NTgsImF1ZCI6IjJhZTU4NWEzLTUxNDEtNDVkMC1iN2MzLWI3NTc3M2U1MjdiMSIsImV4cCI6MTY5Nzc2MTk1OCwiaXNzIjoiaHR0cHM6Ly9jYXJlaW9iMmMuYjJjbG9naW4uY29tLzgyYThmMDNiLTA1ODUtNDEzMC04YWQyLTY5ZTY0ZjYxYzlmYi92Mi4wLyIsIm5iZiI6MTY5NzcwNzk1OH0.lt8ckXffp2BTzwRRiiWNgskT90b_ISLhsmsOex787E8dI2DMIR3YdTRe4dpQ_2-ykmmxEJhQB1eoNRiQ6ge1617lsua__l67Y-hr_vhP6sA1sdkYMmq7VkjSVFf_Xh3H5XaJB-nvMEEYrQ96aN4d95GQuXYrLiRcepbxApRJaVm1O6mSKsuzC9HTZllaqMjv9F1KawhMP3d_PrOEIpTJf7fnJOALWSf70lY3287wP-Yy3AKJMuV9e7CAUL0kPAHxgEf_vRZbG-Ht8axU_nZB2s0ENo2vYQTipD7Bgh9TRWE1gsu2UJ42k0j8ufpqVEdoJ8xiXuO7sqQPOI3HminR1Q</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://webapp-careio-useast2-dev.azurewebsites.net/ImagingStudy" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">ImagingStudy</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                  <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+              <stringProp name="RandomTimer.range">4668.0</stringProp>
+              <stringProp name="ConstantTimer.delay">2334</stringProp>
+              <stringProp name="TestPlan.comments">Recorded time was 4668 milliseconds</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.cloudflare.com/cdn-cgi/trace" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">cdn-cgi/trace</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://api-authentication-eastus2-dev.azurewebsites.net/role/b9022ee2-f2fe-436f-99fd-fcf78b0fcd46?organizationId=3732341f-4725-4f9e-b848-daad66a02741" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="organizationId" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">organizationId</stringProp>
+                  <stringProp name="Argument.value">3732341f-4725-4f9e-b848-daad66a02741</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">role/b9022ee2-f2fe-436f-99fd-fcf78b0fcd46</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJvaWQiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdWIiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdHJlZXRBZGRyZXNzIjoiMjgxOTRiYTAtNDVkZC00MzNlLWEwZDgtMjJkNmFkZjFmYzBkIiwiZmFtaWx5X25hbWUiOiJhaGlyZSIsIm5hbWUiOiJBbW9sIEFoaXJlIiwiZW1haWxzIjpbImFtb2wuYWhpcmVAY2FyZS5pbyJdLCJ0ZnAiOiJCMkNfMV9TaWduVXBJbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwic2NwIjoiYWNjZXNzX2FzX3VzZXIiLCJhenAiOiJhZmY1ZmM0OC1jYjE1LTQ0ZmEtYjMyMS0wZTQ5YTFjMzUxNGUiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2OTc3MDc5NTgsImF1ZCI6IjJhZTU4NWEzLTUxNDEtNDVkMC1iN2MzLWI3NTc3M2U1MjdiMSIsImV4cCI6MTY5Nzc2MTk1OCwiaXNzIjoiaHR0cHM6Ly9jYXJlaW9iMmMuYjJjbG9naW4uY29tLzgyYThmMDNiLTA1ODUtNDEzMC04YWQyLTY5ZTY0ZjYxYzlmYi92Mi4wLyIsIm5iZiI6MTY5NzcwNzk1OH0.lt8ckXffp2BTzwRRiiWNgskT90b_ISLhsmsOex787E8dI2DMIR3YdTRe4dpQ_2-ykmmxEJhQB1eoNRiQ6ge1617lsua__l67Y-hr_vhP6sA1sdkYMmq7VkjSVFf_Xh3H5XaJB-nvMEEYrQ96aN4d95GQuXYrLiRcepbxApRJaVm1O6mSKsuzC9HTZllaqMjv9F1KawhMP3d_PrOEIpTJf7fnJOALWSf70lY3287wP-Yy3AKJMuV9e7CAUL0kPAHxgEf_vRZbG-Ht8axU_nZB2s0ENo2vYQTipD7Bgh9TRWE1gsu2UJ42k0j8ufpqVEdoJ8xiXuO7sqQPOI3HminR1Q</stringProp>
+                </elementProp>
+                <elementProp name="OrganizationId" elementType="Header">
+                  <stringProp name="Header.name">OrganizationId</stringProp>
+                  <stringProp name="Header.value">3732341f-4725-4f9e-b848-daad66a02741</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://apiapp-inbox-eastus2-dev.azurewebsites.net/api/token/GatewayToken" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="secretKey" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">secretKey</stringProp>
+                  <stringProp name="Argument.value">CI6IjEiLCJuYmYiOjE2MDkzMjE</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">api/token/GatewayToken</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://apiapp-inbox-eastus2-dev.azurewebsites.net/api/token/GatewayToken" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="secretKey" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">secretKey</stringProp>
+                  <stringProp name="Argument.value">CI6IjEiLCJuYmYiOjE2MDkzMjE</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">api/token/GatewayToken</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJvaWQiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdWIiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdHJlZXRBZGRyZXNzIjoiMjgxOTRiYTAtNDVkZC00MzNlLWEwZDgtMjJkNmFkZjFmYzBkIiwiZmFtaWx5X25hbWUiOiJhaGlyZSIsIm5hbWUiOiJBbW9sIEFoaXJlIiwiZW1haWxzIjpbImFtb2wuYWhpcmVAY2FyZS5pbyJdLCJ0ZnAiOiJCMkNfMV9TaWduVXBJbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwic2NwIjoiYWNjZXNzX2FzX3VzZXIiLCJhenAiOiJhZmY1ZmM0OC1jYjE1LTQ0ZmEtYjMyMS0wZTQ5YTFjMzUxNGUiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2OTc3MDc5NTgsImF1ZCI6IjJhZTU4NWEzLTUxNDEtNDVkMC1iN2MzLWI3NTc3M2U1MjdiMSIsImV4cCI6MTY5Nzc2MTk1OCwiaXNzIjoiaHR0cHM6Ly9jYXJlaW9iMmMuYjJjbG9naW4uY29tLzgyYThmMDNiLTA1ODUtNDEzMC04YWQyLTY5ZTY0ZjYxYzlmYi92Mi4wLyIsIm5iZiI6MTY5NzcwNzk1OH0.lt8ckXffp2BTzwRRiiWNgskT90b_ISLhsmsOex787E8dI2DMIR3YdTRe4dpQ_2-ykmmxEJhQB1eoNRiQ6ge1617lsua__l67Y-hr_vhP6sA1sdkYMmq7VkjSVFf_Xh3H5XaJB-nvMEEYrQ96aN4d95GQuXYrLiRcepbxApRJaVm1O6mSKsuzC9HTZllaqMjv9F1KawhMP3d_PrOEIpTJf7fnJOALWSf70lY3287wP-Yy3AKJMuV9e7CAUL0kPAHxgEf_vRZbG-Ht8axU_nZB2s0ENo2vYQTipD7Bgh9TRWE1gsu2UJ42k0j8ufpqVEdoJ8xiXuO7sqQPOI3HminR1Q</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://apiapp-inbox-eastus2-dev.azurewebsites.net/api/token/GatewayToken" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="secretKey" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">secretKey</stringProp>
+                  <stringProp name="Argument.value">CI6IjEiLCJuYmYiOjE2MDkzMjE</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">api/token/GatewayToken</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://api-authentication-eastus2-dev.azurewebsites.net/Template?type=advancedsearch" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;item&quot;:[{&quot;linkId&quot;:&quot;6.3&quot;,&quot;text&quot;:&quot;Patient Name&quot;,&quot;prefix&quot;:&quot;subject:Patient.name&quot;,&quot;type&quot;:&quot;string&quot;,&quot;answerOption&quot;:[]},{&quot;linkId&quot;:&quot;7.3&quot;,&quot;text&quot;:&quot;Patient Gender&quot;,&quot;prefix&quot;:&quot;subject:Patient.gender&quot;,&quot;type&quot;:&quot;open-choice&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;male&quot;,&quot;display&quot;:&quot;Male&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;female&quot;,&quot;display&quot;:&quot;Female&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;other&quot;,&quot;display&quot;:&quot;Other&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;unknown&quot;,&quot;display&quot;:&quot;Unknown&quot;}}]},{&quot;linkId&quot;:&quot;8.3&quot;,&quot;text&quot;:&quot;Patient Birthdate&quot;,&quot;prefix&quot;:&quot;subject:Patient.birthdate&quot;,&quot;type&quot;:&quot;date&quot;,&quot;answerOption&quot;:[]},{&quot;linkId&quot;:&quot;9.3&quot;,&quot;text&quot;:&quot;Patient MRN&quot;,&quot;prefix&quot;:&quot;subject:Patient.identifier&quot;,&quot;type&quot;:&quot;string&quot;,&quot;answerOption&quot;:[]},{&quot;linkId&quot;:&quot;3.3&quot;,&quot;text&quot;:&quot;Accession Number&quot;,&quot;prefix&quot;:&quot;identifier&quot;,&quot;type&quot;:&quot;string&quot;,&quot;answerOption&quot;:[]},{&quot;linkId&quot;:&quot;23.3&quot;,&quot;text&quot;:&quot;Modality&quot;,&quot;prefix&quot;:&quot;modality&quot;,&quot;type&quot;:&quot;open-choice&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;AR&quot;,&quot;display&quot;:&quot;AR&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;AU&quot;,&quot;display&quot;:&quot;AU&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;BD&quot;,&quot;display&quot;:&quot;BD&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;BDUS&quot;,&quot;display&quot;:&quot;BDUS&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;BMD&quot;,&quot;display&quot;:&quot;BMD&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;CF&quot;,&quot;display&quot;:&quot;CF&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;CR&quot;,&quot;display&quot;:&quot;CR&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;CT&quot;,&quot;display&quot;:&quot;CT&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;DEXA&quot;,&quot;display&quot;:&quot;DEXA&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;DG&quot;,&quot;display&quot;:&quot;DG&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;DMS&quot;,&quot;display&quot;:&quot;DMS&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;DOC&quot;,&quot;display&quot;:&quot;DOC&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;DR&quot;,&quot;display&quot;:&quot;DR&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;DX&quot;,&quot;display&quot;:&quot;DX&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;DXA&quot;,&quot;display&quot;:&quot;DXA&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;ECG&quot;,&quot;display&quot;:&quot;ECG&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;EEG&quot;,&quot;display&quot;:&quot;EEG&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;EMG&quot;,&quot;display&quot;:&quot;EMG&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;EOG&quot;,&quot;display&quot;:&quot;EOG&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;EPS&quot;,&quot;display&quot;:&quot;EPS&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;ES&quot;,&quot;display&quot;:&quot;ES&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;FA&quot;,&quot;display&quot;:&quot;FA&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;FP&quot;,&quot;display&quot;:&quot;FP&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;GM&quot;,&quot;display&quot;:&quot;GM&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;HD&quot;,&quot;display&quot;:&quot;HD&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;IO&quot;,&quot;display&quot;:&quot;IO&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;IVOCT&quot;,&quot;display&quot;:&quot;IVOCT&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;IVUS&quot;,&quot;display&quot;:&quot;IVUS&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;KER&quot;,&quot;display&quot;:&quot;KER&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;LEN&quot;,&quot;display&quot;:&quot;LEN&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;LS&quot;,&quot;display&quot;:&quot;LS&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;MA&quot;,&quot;display&quot;:&quot;MA&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;MG&quot;,&quot;display&quot;:&quot;MG&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;MR&quot;,&quot;display&quot;:&quot;MR&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;MS&quot;,&quot;display&quot;:&quot;MS&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;NM&quot;,&quot;display&quot;:&quot;NM&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;OAM&quot;,&quot;display&quot;:&quot;OAM&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;OCT&quot;,&quot;display&quot;:&quot;OCT&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;OP&quot;,&quot;display&quot;:&quot;OP&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;OPM&quot;,&quot;display&quot;:&quot;OPM&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;OPT&quot;,&quot;display&quot;:&quot;OPT&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;OPTBSV&quot;,&quot;display&quot;:&quot;OPTBSV&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;OPTENF&quot;,&quot;display&quot;:&quot;OPTENF&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;OPV&quot;,&quot;display&quot;:&quot;OPV&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;OSS&quot;,&quot;display&quot;:&quot;OSS&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;POS&quot;,&quot;display&quot;:&quot;POS&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;PR&quot;,&quot;display&quot;:&quot;PR&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;PT&quot;,&quot;display&quot;:&quot;PT&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;PX&quot;,&quot;display&quot;:&quot;PX&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;RESP&quot;,&quot;display&quot;:&quot;RESP&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;RF&quot;,&quot;display&quot;:&quot;RF&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;RG&quot;,&quot;display&quot;:&quot;RG&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;RTIMAGE&quot;,&quot;display&quot;:&quot;RTIMAGE&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;RTPLAN&quot;,&quot;display&quot;:&quot;RTPLAN&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;RTSTRUCT&quot;,&quot;display&quot;:&quot;RTSTRUCT&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;SC&quot;,&quot;display&quot;:&quot;SC&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;SM&quot;,&quot;display&quot;:&quot;SM&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;SP&quot;,&quot;display&quot;:&quot;SP&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;SR&quot;,&quot;display&quot;:&quot;SR&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;SRF&quot;,&quot;display&quot;:&quot;SRF&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;TG&quot;,&quot;display&quot;:&quot;TG&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;US&quot;,&quot;display&quot;:&quot;US&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;VA&quot;,&quot;display&quot;:&quot;VA&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;XA&quot;,&quot;display&quot;:&quot;XA&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;XC&quot;,&quot;display&quot;:&quot;XC&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;XR&quot;,&quot;display&quot;:&quot;XR&quot;}}]},{&quot;linkId&quot;:&quot;5.3&quot;,&quot;text&quot;:&quot;Status&quot;,&quot;prefix&quot;:&quot;status&quot;,&quot;type&quot;:&quot;open-choice&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;available&quot;,&quot;display&quot;:&quot;Available&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;registered&quot;,&quot;display&quot;:&quot;Registered&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;cancelled&quot;,&quot;display&quot;:&quot;Cancelled&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;entered-in-error&quot;,&quot;display&quot;:&quot;Entered in error&quot;}},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;unknown&quot;,&quot;display&quot;:&quot;Unknown&quot;}}]},{&quot;linkId&quot;:&quot;10.3&quot;,&quot;text&quot;:&quot;Study Date From&quot;,&quot;prefix&quot;:&quot;started&quot;,&quot;type&quot;:&quot;date&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;},{&quot;valueDate&quot;:&quot;&quot;}],&quot;definition&quot;:&quot;gt&quot;},{&quot;linkId&quot;:&quot;10.3&quot;,&quot;text&quot;:&quot;Study Date To&quot;,&quot;prefix&quot;:&quot;started&quot;,&quot;type&quot;:&quot;date&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;},{&quot;valueDate&quot;:&quot;&quot;}],&quot;definition&quot;:&quot;lt&quot;},{&quot;linkId&quot;:&quot;1.3&quot;,&quot;text&quot;:&quot;Study Update Date From&quot;,&quot;prefix&quot;:&quot;_lastUpdated&quot;,&quot;type&quot;:&quot;date&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;},{&quot;valueDate&quot;:&quot;&quot;}],&quot;definition&quot;:&quot;gt&quot;},{&quot;linkId&quot;:&quot;1.3&quot;,&quot;text&quot;:&quot;Study Update Date To&quot;,&quot;prefix&quot;:&quot;_lastUpdated&quot;,&quot;type&quot;:&quot;date&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;},{&quot;valueDate&quot;:&quot;&quot;}],&quot;definition&quot;:&quot;lt&quot;}]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">Template?type=advancedsearch</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="OperatingId" elementType="Header">
+                  <stringProp name="Header.name">OperatingId</stringProp>
+                  <stringProp name="Header.value">1234-dfdf-34343</stringProp>
+                </elementProp>
+                <elementProp name="CareCode" elementType="Header">
+                  <stringProp name="Header.name">CareCode</stringProp>
+                  <stringProp name="Header.value">null</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJvaWQiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdWIiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdHJlZXRBZGRyZXNzIjoiMjgxOTRiYTAtNDVkZC00MzNlLWEwZDgtMjJkNmFkZjFmYzBkIiwiZmFtaWx5X25hbWUiOiJhaGlyZSIsIm5hbWUiOiJBbW9sIEFoaXJlIiwiZW1haWxzIjpbImFtb2wuYWhpcmVAY2FyZS5pbyJdLCJ0ZnAiOiJCMkNfMV9TaWduVXBJbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwic2NwIjoiYWNjZXNzX2FzX3VzZXIiLCJhenAiOiJhZmY1ZmM0OC1jYjE1LTQ0ZmEtYjMyMS0wZTQ5YTFjMzUxNGUiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2OTc3MDc5NTgsImF1ZCI6IjJhZTU4NWEzLTUxNDEtNDVkMC1iN2MzLWI3NTc3M2U1MjdiMSIsImV4cCI6MTY5Nzc2MTk1OCwiaXNzIjoiaHR0cHM6Ly9jYXJlaW9iMmMuYjJjbG9naW4uY29tLzgyYThmMDNiLTA1ODUtNDEzMC04YWQyLTY5ZTY0ZjYxYzlmYi92Mi4wLyIsIm5iZiI6MTY5NzcwNzk1OH0.lt8ckXffp2BTzwRRiiWNgskT90b_ISLhsmsOex787E8dI2DMIR3YdTRe4dpQ_2-ykmmxEJhQB1eoNRiQ6ge1617lsua__l67Y-hr_vhP6sA1sdkYMmq7VkjSVFf_Xh3H5XaJB-nvMEEYrQ96aN4d95GQuXYrLiRcepbxApRJaVm1O6mSKsuzC9HTZllaqMjv9F1KawhMP3d_PrOEIpTJf7fnJOALWSf70lY3287wP-Yy3AKJMuV9e7CAUL0kPAHxgEf_vRZbG-Ht8axU_nZB2s0ENo2vYQTipD7Bgh9TRWE1gsu2UJ42k0j8ufpqVEdoJ8xiXuO7sqQPOI3HminR1Q</stringProp>
+                </elementProp>
+                <elementProp name="OrganizationId" elementType="Header">
+                  <stringProp name="Header.name">OrganizationId</stringProp>
+                  <stringProp name="Header.value">3732341f-4725-4f9e-b848-daad66a02741</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/plain, */*; q=0.01</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://apiapp-dal-useast2-dev.azurewebsites.net/api/settings/get?key=ImagingStudy" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="key" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">key</stringProp>
+                  <stringProp name="Argument.value">ImagingStudy</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">api/settings/get</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJvaWQiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdWIiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdHJlZXRBZGRyZXNzIjoiMjgxOTRiYTAtNDVkZC00MzNlLWEwZDgtMjJkNmFkZjFmYzBkIiwiZmFtaWx5X25hbWUiOiJhaGlyZSIsIm5hbWUiOiJBbW9sIEFoaXJlIiwiZW1haWxzIjpbImFtb2wuYWhpcmVAY2FyZS5pbyJdLCJ0ZnAiOiJCMkNfMV9TaWduVXBJbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwic2NwIjoiYWNjZXNzX2FzX3VzZXIiLCJhenAiOiJhZmY1ZmM0OC1jYjE1LTQ0ZmEtYjMyMS0wZTQ5YTFjMzUxNGUiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2OTc3MDc5NTgsImF1ZCI6IjJhZTU4NWEzLTUxNDEtNDVkMC1iN2MzLWI3NTc3M2U1MjdiMSIsImV4cCI6MTY5Nzc2MTk1OCwiaXNzIjoiaHR0cHM6Ly9jYXJlaW9iMmMuYjJjbG9naW4uY29tLzgyYThmMDNiLTA1ODUtNDEzMC04YWQyLTY5ZTY0ZjYxYzlmYi92Mi4wLyIsIm5iZiI6MTY5NzcwNzk1OH0.lt8ckXffp2BTzwRRiiWNgskT90b_ISLhsmsOex787E8dI2DMIR3YdTRe4dpQ_2-ykmmxEJhQB1eoNRiQ6ge1617lsua__l67Y-hr_vhP6sA1sdkYMmq7VkjSVFf_Xh3H5XaJB-nvMEEYrQ96aN4d95GQuXYrLiRcepbxApRJaVm1O6mSKsuzC9HTZllaqMjv9F1KawhMP3d_PrOEIpTJf7fnJOALWSf70lY3287wP-Yy3AKJMuV9e7CAUL0kPAHxgEf_vRZbG-Ht8axU_nZB2s0ENo2vYQTipD7Bgh9TRWE1gsu2UJ42k0j8ufpqVEdoJ8xiXuO7sqQPOI3HminR1Q</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://apiapp-dal-useast2-dev.azurewebsites.net/api/settings/set?key=ImagingStudy" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">api/settings/set?key=ImagingStudy</stringProp>
+            <stringProp name="HTTPSampler.method">PUT</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJvaWQiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdWIiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdHJlZXRBZGRyZXNzIjoiMjgxOTRiYTAtNDVkZC00MzNlLWEwZDgtMjJkNmFkZjFmYzBkIiwiZmFtaWx5X25hbWUiOiJhaGlyZSIsIm5hbWUiOiJBbW9sIEFoaXJlIiwiZW1haWxzIjpbImFtb2wuYWhpcmVAY2FyZS5pbyJdLCJ0ZnAiOiJCMkNfMV9TaWduVXBJbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwic2NwIjoiYWNjZXNzX2FzX3VzZXIiLCJhenAiOiJhZmY1ZmM0OC1jYjE1LTQ0ZmEtYjMyMS0wZTQ5YTFjMzUxNGUiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2OTc3MDc5NTgsImF1ZCI6IjJhZTU4NWEzLTUxNDEtNDVkMC1iN2MzLWI3NTc3M2U1MjdiMSIsImV4cCI6MTY5Nzc2MTk1OCwiaXNzIjoiaHR0cHM6Ly9jYXJlaW9iMmMuYjJjbG9naW4uY29tLzgyYThmMDNiLTA1ODUtNDEzMC04YWQyLTY5ZTY0ZjYxYzlmYi92Mi4wLyIsIm5iZiI6MTY5NzcwNzk1OH0.lt8ckXffp2BTzwRRiiWNgskT90b_ISLhsmsOex787E8dI2DMIR3YdTRe4dpQ_2-ykmmxEJhQB1eoNRiQ6ge1617lsua__l67Y-hr_vhP6sA1sdkYMmq7VkjSVFf_Xh3H5XaJB-nvMEEYrQ96aN4d95GQuXYrLiRcepbxApRJaVm1O6mSKsuzC9HTZllaqMjv9F1KawhMP3d_PrOEIpTJf7fnJOALWSf70lY3287wP-Yy3AKJMuV9e7CAUL0kPAHxgEf_vRZbG-Ht8axU_nZB2s0ENo2vYQTipD7Bgh9TRWE1gsu2UJ42k0j8ufpqVEdoJ8xiXuO7sqQPOI3HminR1Q</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://apiapp-dal-useast2-dev.azurewebsites.net/api/ImagingStudy?_include=ImagingStudy:subject&amp;_include=ImagingStudy:referrer&amp;_total=accurate&amp;_sort=-_lastUpdated&amp;_elements=id,identifier,subject,name,gender,birthDate,modality,description,status,started,numberOfInstances,reasonReference,referrer,extension,location&amp;_count=10&amp;" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="_include" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">_include</stringProp>
+                  <stringProp name="Argument.value">ImagingStudy:referrer</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="_elements" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">_elements</stringProp>
+                  <stringProp name="Argument.value">id,identifier,subject,name,gender,birthDate,modality,description,status,started,numberOfInstances,reasonReference,referrer,extension,location</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="_count" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">_count</stringProp>
+                  <stringProp name="Argument.value">10</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="_total" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">_total</stringProp>
+                  <stringProp name="Argument.value">accurate</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="_sort" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">_sort</stringProp>
+                  <stringProp name="Argument.value">-_lastUpdated</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">api/ImagingStudy</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="OperatingId" elementType="Header">
+                  <stringProp name="Header.name">OperatingId</stringProp>
+                  <stringProp name="Header.value">1234-dfdf-34343</stringProp>
+                </elementProp>
+                <elementProp name="CareCode" elementType="Header">
+                  <stringProp name="Header.name">CareCode</stringProp>
+                  <stringProp name="Header.value">null</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJvaWQiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdWIiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdHJlZXRBZGRyZXNzIjoiMjgxOTRiYTAtNDVkZC00MzNlLWEwZDgtMjJkNmFkZjFmYzBkIiwiZmFtaWx5X25hbWUiOiJhaGlyZSIsIm5hbWUiOiJBbW9sIEFoaXJlIiwiZW1haWxzIjpbImFtb2wuYWhpcmVAY2FyZS5pbyJdLCJ0ZnAiOiJCMkNfMV9TaWduVXBJbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwic2NwIjoiYWNjZXNzX2FzX3VzZXIiLCJhenAiOiJhZmY1ZmM0OC1jYjE1LTQ0ZmEtYjMyMS0wZTQ5YTFjMzUxNGUiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2OTc3MDc5NTgsImF1ZCI6IjJhZTU4NWEzLTUxNDEtNDVkMC1iN2MzLWI3NTc3M2U1MjdiMSIsImV4cCI6MTY5Nzc2MTk1OCwiaXNzIjoiaHR0cHM6Ly9jYXJlaW9iMmMuYjJjbG9naW4uY29tLzgyYThmMDNiLTA1ODUtNDEzMC04YWQyLTY5ZTY0ZjYxYzlmYi92Mi4wLyIsIm5iZiI6MTY5NzcwNzk1OH0.lt8ckXffp2BTzwRRiiWNgskT90b_ISLhsmsOex787E8dI2DMIR3YdTRe4dpQ_2-ykmmxEJhQB1eoNRiQ6ge1617lsua__l67Y-hr_vhP6sA1sdkYMmq7VkjSVFf_Xh3H5XaJB-nvMEEYrQ96aN4d95GQuXYrLiRcepbxApRJaVm1O6mSKsuzC9HTZllaqMjv9F1KawhMP3d_PrOEIpTJf7fnJOALWSf70lY3287wP-Yy3AKJMuV9e7CAUL0kPAHxgEf_vRZbG-Ht8axU_nZB2s0ENo2vYQTipD7Bgh9TRWE1gsu2UJ42k0j8ufpqVEdoJ8xiXuO7sqQPOI3HminR1Q</stringProp>
+                </elementProp>
+                <elementProp name="OrganizationId" elementType="Header">
+                  <stringProp name="Header.name">OrganizationId</stringProp>
+                  <stringProp name="Header.value">3732341f-4725-4f9e-b848-daad66a02741</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://cdn.ckeditor.com/4.17.1/standard-all/plugins/emoji/emoji.json?t=LAHF" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="t" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">t</stringProp>
+                  <stringProp name="Argument.value">LAHF</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_7}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">4.17.1/standard-all/plugins/emoji/emoji.json</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://apiapp-dal-useast2-dev.azurewebsites.net/api/Dictionary/list?OrganizationId=3732341f-4725-4f9e-b848-daad66a02741&amp;count=100&amp;Resource=ImagingStudy" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="count" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">count</stringProp>
+                  <stringProp name="Argument.value">100</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="Resource" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">Resource</stringProp>
+                  <stringProp name="Argument.value">ImagingStudy</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="OrganizationId" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">OrganizationId</stringProp>
+                  <stringProp name="Argument.value">3732341f-4725-4f9e-b848-daad66a02741</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">api/Dictionary/list</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJvaWQiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdWIiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdHJlZXRBZGRyZXNzIjoiMjgxOTRiYTAtNDVkZC00MzNlLWEwZDgtMjJkNmFkZjFmYzBkIiwiZmFtaWx5X25hbWUiOiJhaGlyZSIsIm5hbWUiOiJBbW9sIEFoaXJlIiwiZW1haWxzIjpbImFtb2wuYWhpcmVAY2FyZS5pbyJdLCJ0ZnAiOiJCMkNfMV9TaWduVXBJbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwic2NwIjoiYWNjZXNzX2FzX3VzZXIiLCJhenAiOiJhZmY1ZmM0OC1jYjE1LTQ0ZmEtYjMyMS0wZTQ5YTFjMzUxNGUiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2OTc3MDc5NTgsImF1ZCI6IjJhZTU4NWEzLTUxNDEtNDVkMC1iN2MzLWI3NTc3M2U1MjdiMSIsImV4cCI6MTY5Nzc2MTk1OCwiaXNzIjoiaHR0cHM6Ly9jYXJlaW9iMmMuYjJjbG9naW4uY29tLzgyYThmMDNiLTA1ODUtNDEzMC04YWQyLTY5ZTY0ZjYxYzlmYi92Mi4wLyIsIm5iZiI6MTY5NzcwNzk1OH0.lt8ckXffp2BTzwRRiiWNgskT90b_ISLhsmsOex787E8dI2DMIR3YdTRe4dpQ_2-ykmmxEJhQB1eoNRiQ6ge1617lsua__l67Y-hr_vhP6sA1sdkYMmq7VkjSVFf_Xh3H5XaJB-nvMEEYrQ96aN4d95GQuXYrLiRcepbxApRJaVm1O6mSKsuzC9HTZllaqMjv9F1KawhMP3d_PrOEIpTJf7fnJOALWSf70lY3287wP-Yy3AKJMuV9e7CAUL0kPAHxgEf_vRZbG-Ht8axU_nZB2s0ENo2vYQTipD7Bgh9TRWE1gsu2UJ42k0j8ufpqVEdoJ8xiXuO7sqQPOI3HminR1Q</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://api-authentication-eastus2-dev.azurewebsites.net/Template?type=dictionary" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;list&quot;:[{&quot;id&quot;:&quot;7ce76621-6c3e-4a83-9349-af2f267c81cb&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;group&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;P group&quot;,&quot;fields&quot;:[{&quot;reference&quot;:&quot;Dictionary/3266b769-c1bb-4406-a10d-8b08a33c58cc&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/3d445ed4-1050-464c-a638-af305e288c2a&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/e5323a86-04c8-43f7-b498-0c551133211f&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;id&quot;:&quot;e5323a86-04c8-43f7-b498-0c551133211f&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;P item dropdown 2&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;452827&quot;,&quot;text&quot;:&quot;P item dropdown 2&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P test 1&quot;,&quot;display&quot;:&quot;P test 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P test 2&quot;,&quot;display&quot;:&quot;P test 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P test 3&quot;,&quot;display&quot;:&quot;P test 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;P item dropdown 2&quot;},{&quot;id&quot;:&quot;3d445ed4-1050-464c-a638-af305e288c2a&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;P item Dropdown&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;137839&quot;,&quot;text&quot;:&quot;P item Dropdown&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P val 1&quot;,&quot;display&quot;:&quot;P val 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P val 2&quot;,&quot;display&quot;:&quot;P val 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P val 3&quot;,&quot;display&quot;:&quot;P val 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;P item Dropdown&quot;},{&quot;id&quot;:&quot;3266b769-c1bb-4406-a10d-8b08a33c58cc&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;P Item 1&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;P Item 1&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;e5323a86-04c8-43f7-b498-0c551133211f&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;P test 1&quot;,&quot;display&quot;:&quot;P test 1&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;P Item 1&quot;}],&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;P group&quot;},{&quot;id&quot;:&quot;cef3347c-951c-4aa9-83e5-b3667edca75a&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;group&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;G Group&quot;,&quot;fields&quot;:[{&quot;reference&quot;:&quot;Dictionary/6b171bd1-24b3-4b78-bf28-9c0883421ef8&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/901c7581-5aab-43bc-97ee-c1dc2e989449&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/a21efb06-d2c6-49e1-92bb-28e9a8436ab3&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/fc3f18dc-1f4e-4881-9455-d77f6956b4f9&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/1f5a940b-a74c-4c3d-b8e3-48fc124569bc&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/3e854d4b-96f9-4382-a2f0-78b8d52d97ea&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/8cffc116-1241-4807-9ada-f4f2e854ae32&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;id&quot;:&quot;8cffc116-1241-4807-9ada-f4f2e854ae32&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Show drop&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Show drop&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Opt 1&quot;,&quot;display&quot;:&quot;Opt 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Opt 2&quot;,&quot;display&quot;:&quot;Opt 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Opt 3&quot;,&quot;display&quot;:&quot;Opt 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;6b171bd1-24b3-4b78-bf28-9c0883421ef8&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;Val 2&quot;,&quot;display&quot;:&quot;Val 2&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Show drop&quot;},{&quot;id&quot;:&quot;3e854d4b-96f9-4382-a2f0-78b8d52d97ea&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Show on G Dropdown&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Show on G Dropdown&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;8cffc116-1241-4807-9ada-f4f2e854ae32&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;Opt 2&quot;,&quot;display&quot;:&quot;Opt 2&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Show on G Dropdown&quot;},{&quot;id&quot;:&quot;1f5a940b-a74c-4c3d-b8e3-48fc124569bc&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Shown on G Multi&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Shown on G Multi&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;fc3f18dc-1f4e-4881-9455-d77f6956b4f9&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;one&quot;,&quot;display&quot;:&quot;one&quot;}},{&quot;question&quot;:&quot;fc3f18dc-1f4e-4881-9455-d77f6956b4f9&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;two&quot;,&quot;display&quot;:&quot;two&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Shown on G Multi&quot;},{&quot;id&quot;:&quot;fc3f18dc-1f4e-4881-9455-d77f6956b4f9&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;G Multiselect&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;READ&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;G Multiselect&quot;,&quot;type&quot;:&quot;open-choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;one&quot;,&quot;display&quot;:&quot;one&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;two&quot;,&quot;display&quot;:&quot;two&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;three&quot;,&quot;display&quot;:&quot;three&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl&quot;,&quot;valueBoolean&quot;:false,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/questionnaire-item-control&quot;,&quot;code&quot;:&quot;multiselect-dropdown&quot;,&quot;display&quot;:&quot;Multiselect-dropdown&quot;}],&quot;text&quot;:null}}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;G Multiselect&quot;},{&quot;id&quot;:&quot;a21efb06-d2c6-49e1-92bb-28e9a8436ab3&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;G Field 3&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;G Field Shown&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;901c7581-5aab-43bc-97ee-c1dc2e989449&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;Label 3&quot;,&quot;display&quot;:&quot;Label 3&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;G Field 3&quot;},{&quot;id&quot;:&quot;901c7581-5aab-43bc-97ee-c1dc2e989449&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;G Field 2&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;781219&quot;,&quot;text&quot;:&quot;G Field 2&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Label 1&quot;,&quot;display&quot;:&quot;Label 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Label 2&quot;,&quot;display&quot;:&quot;Label 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Label 3&quot;,&quot;display&quot;:&quot;Label 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;G Field 2&quot;},{&quot;id&quot;:&quot;6b171bd1-24b3-4b78-bf28-9c0883421ef8&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;GField 1&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;695645&quot;,&quot;text&quot;:&quot;GField 1&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Val 1&quot;,&quot;display&quot;:&quot;Val 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Val 2&quot;,&quot;display&quot;:&quot;Val 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Val 3&quot;,&quot;display&quot;:&quot;Val 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;GField 1&quot;}],&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#0ae3f7&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;groupName&quot;:&quot;G Group&quot;},{&quot;id&quot;:&quot;84f2bfa5-bb15-4e12-90b6-9d8537a7d1f7&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;group&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Dont use item group two&quot;,&quot;fields&quot;:[],&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;groupName&quot;:&quot;Dont use item group two&quot;},{&quot;id&quot;:&quot;9c6b3c62-c637-4b0f-bdec-35a6a3cd4371&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;group&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Dont use item group one&quot;,&quot;fields&quot;:[{&quot;reference&quot;:&quot;Dictionary/4911bca3-7280-4624-9818-04d44da1643e&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/4a8f9183-41a0-4df1-8e4d-315df7087a22&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/ff7b2ed9-47da-45b6-807e-d686ba530090&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/6a2e04a4-c209-4461-b576-bfb33cc0ba05&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;id&quot;:&quot;6a2e04a4-c209-4461-b576-bfb33cc0ba05&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Dont use item date&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Dont use item date&quot;,&quot;type&quot;:&quot;date&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;,&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;AllowTodayAndPastDate&quot;,&quot;valueBoolean&quot;:false}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Dont use item date&quot;},{&quot;id&quot;:&quot;ff7b2ed9-47da-45b6-807e-d686ba530090&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Dont use item number&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Dont use item number&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Dont use item number&quot;},{&quot;id&quot;:&quot;4a8f9183-41a0-4df1-8e4d-315df7087a22&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Dont use item text area&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Dont use item text area&quot;,&quot;type&quot;:&quot;text&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Dont use item text area&quot;},{&quot;id&quot;:&quot;4911bca3-7280-4624-9818-04d44da1643e&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Dont use item text&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Dont use item text&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Dont use item text&quot;}],&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#a019c2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;groupName&quot;:&quot;Dont use item group one&quot;},{&quot;id&quot;:&quot;f8acc817-b126-444b-becf-aca26c177b73&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;group&quot;,&quot;value&quot;:&quot;testing gill&quot;,&quot;name&quot;:&quot;group gill&quot;,&quot;fields&quot;:[],&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;groupName&quot;:&quot;group gill&quot;},{&quot;id&quot;:&quot;c57ed623-1564-4504-8b13-7659fe1dd152&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;group&quot;,&quot;value&quot;:&quot;123&quot;,&quot;name&quot;:&quot;cusomization group&quot;,&quot;fields&quot;:[{&quot;reference&quot;:&quot;Dictionary/90d31938-bd7c-4ea5-9781-cb3339fe224d&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;id&quot;:&quot;90d31938-bd7c-4ea5-9781-cb3339fe224d&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;NK Test One&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;NK One&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;NK Test One&quot;}],&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#278564&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;groupName&quot;:&quot;cusomization group&quot;},{&quot;id&quot;:&quot;cd690584-90cc-48b1-9183-bda9f00031ef&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;group&quot;,&quot;value&quot;:&quot;User NK Group&quot;,&quot;name&quot;:&quot;User NK Group&quot;,&quot;fields&quot;:[{&quot;reference&quot;:&quot;Dictionary/85643e66-65de-4631-9ac3-29f488015802&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;id&quot;:&quot;85643e66-65de-4631-9ac3-29f488015802&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;userNk&quot;,&quot;name&quot;:&quot;User nk&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;381179&quot;,&quot;text&quot;:&quot;Enter Date&quot;,&quot;type&quot;:&quot;date&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;,&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;AllowTodayAndPastDate&quot;,&quot;valueBoolean&quot;:false}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;User nk&quot;}],&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;groupName&quot;:&quot;User NK Group&quot;},{&quot;id&quot;:&quot;c12c8dc8-faf9-4a77-a63e-84a70a08fbfa&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;group&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;ST New Test Group&quot;,&quot;fields&quot;:[{&quot;reference&quot;:&quot;Dictionary/787e120c-d2c3-4b8c-9544-11891191ad30&quot;,&quot;requiredInTagGroup&quot;:true},{&quot;reference&quot;:&quot;Dictionary/a0461751-8903-4a08-ab7f-06f82464087b&quot;,&quot;requiredInTagGroup&quot;:false},{&quot;reference&quot;:&quot;Dictionary/c29dac1a-9d27-44fe-95e9-80555294ed7b&quot;,&quot;requiredInTagGroup&quot;:true},{&quot;reference&quot;:&quot;Dictionary/4cafa768-5bba-48b4-9a10-ef2955830fbc&quot;,&quot;requiredInTagGroup&quot;:true},{&quot;id&quot;:&quot;4cafa768-5bba-48b4-9a10-ef2955830fbc&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Test Picker&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;921341&quot;,&quot;text&quot;:&quot;Test Picker&quot;,&quot;type&quot;:&quot;open-choice&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;val 1&quot;,&quot;display&quot;:&quot;val 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false,&quot;extension&quot;:[{&quot;url&quot;:&quot;https://example.org/fhir/StructureDefinition/ValidationHint&quot;,&quot;valueString&quot;:&quot;test 1&quot;,&quot;valueBoolean&quot;:false}]},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;val 2&quot;,&quot;display&quot;:&quot;val 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false,&quot;extension&quot;:[{&quot;url&quot;:&quot;https://example.org/fhir/StructureDefinition/ValidationHint&quot;,&quot;valueString&quot;:&quot;test 2&quot;,&quot;valueBoolean&quot;:false}]},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;val 3&quot;,&quot;display&quot;:&quot;val 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false,&quot;extension&quot;:[{&quot;url&quot;:&quot;https://example.org/fhir/StructureDefinition/ValidationHint&quot;,&quot;valueString&quot;:&quot;test 3&quot;,&quot;valueBoolean&quot;:false}]}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Test Picker&quot;},{&quot;id&quot;:&quot;c29dac1a-9d27-44fe-95e9-80555294ed7b&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;Test&quot;,&quot;name&quot;:&quot;Radio Test&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;247000&quot;,&quot;text&quot;:&quot;Radio Test&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Radio Test&quot;},{&quot;id&quot;:&quot;a0461751-8903-4a08-ab7f-06f82464087b&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;airtel&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;READ&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;cutomer&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[{&quot;url&quot;:&quot;ValidationErrorMessage&quot;,&quot;valueString&quot;:&quot;Please Enter value&quot;,&quot;valueBoolean&quot;:false},{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/entryFormat&quot;,&quot;valueString&quot;:&quot;text&quot;,&quot;valueBoolean&quot;:false}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;airtel&quot;},{&quot;id&quot;:&quot;787e120c-d2c3-4b8c-9544-11891191ad30&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;sub check item&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;airtel wala&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;sub check item&quot;}],&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;groupName&quot;:&quot;ST New Test Group&quot;},{&quot;id&quot;:&quot;30b85e2e-7253-4975-9d01-ecb06978c9a9&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;group&quot;,&quot;value&quot;:&quot;NK Value&quot;,&quot;name&quot;:&quot;NK Test&quot;,&quot;fields&quot;:[{&quot;reference&quot;:&quot;Dictionary/787e120c-d2c3-4b8c-9544-11891191ad30&quot;,&quot;requiredInTagGroup&quot;:true},{&quot;id&quot;:&quot;787e120c-d2c3-4b8c-9544-11891191ad30&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;sub check item&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;airtel wala&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;sub check item&quot;}],&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;groupName&quot;:&quot;NK Test&quot;},{&quot;id&quot;:&quot;606889a4-bc43-4fc6-af83-83203f58e872&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Checkbox Test&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;775082&quot;,&quot;text&quot;:&quot;Checkbox Test&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Checkbox Test&quot;},{&quot;id&quot;:&quot;5b0cf093-c552-4d2c-8f5a-aa7b04f548b2&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Radio condition check&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Radio condition check&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;161e7f48-805b-43d6-8a89-a9581f4f3e41&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;val 2&quot;,&quot;display&quot;:&quot;val 2&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Radio condition check&quot;},{&quot;id&quot;:&quot;161e7f48-805b-43d6-8a89-a9581f4f3e41&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;Test&quot;,&quot;name&quot;:&quot;Radio button&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;825412&quot;,&quot;text&quot;:&quot;Radio button&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;val 1&quot;,&quot;display&quot;:&quot;val 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;val 2&quot;,&quot;display&quot;:&quot;val 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;val 3&quot;,&quot;display&quot;:&quot;val 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl&quot;,&quot;valueBoolean&quot;:false,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/questionnaire-item-control&quot;,&quot;code&quot;:&quot;radio-button&quot;,&quot;display&quot;:&quot;Radio Button&quot;}],&quot;text&quot;:&quot;A control where choices are listed with a button beside them. The button can be toggled to select or de-select a given choice. Selecting one item deselects all others.&quot;}}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Radio button&quot;},{&quot;id&quot;:&quot;8cffc116-1241-4807-9ada-f4f2e854ae32&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Show drop&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Show drop&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Opt 1&quot;,&quot;display&quot;:&quot;Opt 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Opt 2&quot;,&quot;display&quot;:&quot;Opt 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Opt 3&quot;,&quot;display&quot;:&quot;Opt 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;6b171bd1-24b3-4b78-bf28-9c0883421ef8&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;Val 2&quot;,&quot;display&quot;:&quot;Val 2&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Show drop&quot;},{&quot;id&quot;:&quot;3e854d4b-96f9-4382-a2f0-78b8d52d97ea&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Show on G Dropdown&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Show on G Dropdown&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;8cffc116-1241-4807-9ada-f4f2e854ae32&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;Opt 2&quot;,&quot;display&quot;:&quot;Opt 2&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Show on G Dropdown&quot;},{&quot;id&quot;:&quot;e5323a86-04c8-43f7-b498-0c551133211f&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;P item dropdown 2&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;452827&quot;,&quot;text&quot;:&quot;P item dropdown 2&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P test 1&quot;,&quot;display&quot;:&quot;P test 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P test 2&quot;,&quot;display&quot;:&quot;P test 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P test 3&quot;,&quot;display&quot;:&quot;P test 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;P item dropdown 2&quot;},{&quot;id&quot;:&quot;3d445ed4-1050-464c-a638-af305e288c2a&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;P item Dropdown&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;137839&quot;,&quot;text&quot;:&quot;P item Dropdown&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P val 1&quot;,&quot;display&quot;:&quot;P val 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P val 2&quot;,&quot;display&quot;:&quot;P val 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;P val 3&quot;,&quot;display&quot;:&quot;P val 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;P item Dropdown&quot;},{&quot;id&quot;:&quot;3266b769-c1bb-4406-a10d-8b08a33c58cc&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;P Item 1&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;P Item 1&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;e5323a86-04c8-43f7-b498-0c551133211f&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;P test 1&quot;,&quot;display&quot;:&quot;P test 1&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;P Item 1&quot;},{&quot;id&quot;:&quot;1f5a940b-a74c-4c3d-b8e3-48fc124569bc&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Shown on G Multi&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Shown on G Multi&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;fc3f18dc-1f4e-4881-9455-d77f6956b4f9&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;one&quot;,&quot;display&quot;:&quot;one&quot;}},{&quot;question&quot;:&quot;fc3f18dc-1f4e-4881-9455-d77f6956b4f9&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;two&quot;,&quot;display&quot;:&quot;two&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Shown on G Multi&quot;},{&quot;id&quot;:&quot;fc3f18dc-1f4e-4881-9455-d77f6956b4f9&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;G Multiselect&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;READ&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;G Multiselect&quot;,&quot;type&quot;:&quot;open-choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;one&quot;,&quot;display&quot;:&quot;one&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;two&quot;,&quot;display&quot;:&quot;two&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;three&quot;,&quot;display&quot;:&quot;three&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl&quot;,&quot;valueBoolean&quot;:false,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/questionnaire-item-control&quot;,&quot;code&quot;:&quot;multiselect-dropdown&quot;,&quot;display&quot;:&quot;Multiselect-dropdown&quot;}],&quot;text&quot;:null}}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;G Multiselect&quot;},{&quot;id&quot;:&quot;a21efb06-d2c6-49e1-92bb-28e9a8436ab3&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;G Field 3&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;G Field Shown&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;901c7581-5aab-43bc-97ee-c1dc2e989449&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;Label 3&quot;,&quot;display&quot;:&quot;Label 3&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;G Field 3&quot;},{&quot;id&quot;:&quot;901c7581-5aab-43bc-97ee-c1dc2e989449&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;G Field 2&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;781219&quot;,&quot;text&quot;:&quot;G Field 2&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Label 1&quot;,&quot;display&quot;:&quot;Label 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Label 2&quot;,&quot;display&quot;:&quot;Label 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Label 3&quot;,&quot;display&quot;:&quot;Label 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;G Field 2&quot;},{&quot;id&quot;:&quot;6b171bd1-24b3-4b78-bf28-9c0883421ef8&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;GField 1&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;695645&quot;,&quot;text&quot;:&quot;GField 1&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Val 1&quot;,&quot;display&quot;:&quot;Val 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Val 2&quot;,&quot;display&quot;:&quot;Val 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Val 3&quot;,&quot;display&quot;:&quot;Val 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;GField 1&quot;},{&quot;id&quot;:&quot;675ac958-8d17-4859-a59a-18ea42fbb90e&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Shown New&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Shown New&quot;,&quot;type&quot;:&quot;text&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;432cea8e-7247-44ee-a9c7-cdd76ecc7416&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;Test 2&quot;,&quot;display&quot;:&quot;Test 2&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Shown New&quot;},{&quot;id&quot;:&quot;432cea8e-7247-44ee-a9c7-cdd76ecc7416&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Field Shown 2&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Shown 2&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Test 1&quot;,&quot;display&quot;:&quot;Test 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Test 2&quot;,&quot;display&quot;:&quot;Test 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;38c662f3-1980-415c-96c1-3c012d472595&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;Second&quot;,&quot;display&quot;:&quot;Second&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Field Shown 2&quot;},{&quot;id&quot;:&quot;929fe7e2-a198-45c6-8ee5-7c823810d503&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Field Shown&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;414778&quot;,&quot;text&quot;:&quot;Shown&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;38c662f3-1980-415c-96c1-3c012d472595&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;Second&quot;,&quot;display&quot;:&quot;Second&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Field Shown&quot;},{&quot;id&quot;:&quot;38c662f3-1980-415c-96c1-3c012d472595&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Dependant Field&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Depend Field&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;First&quot;,&quot;display&quot;:&quot;First&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Second&quot;,&quot;display&quot;:&quot;Second&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Third&quot;,&quot;display&quot;:&quot;Third&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Dependant Field&quot;},{&quot;id&quot;:&quot;52512f8f-eb37-47da-943b-e4b687e13191&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Don&apos;t Use Item Picker&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;360067&quot;,&quot;text&quot;:&quot;Don&apos;t Use Item Picker&quot;,&quot;type&quot;:&quot;open-choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;val 1&quot;,&quot;display&quot;:&quot;val 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false,&quot;extension&quot;:[{&quot;url&quot;:&quot;https://example.org/fhir/StructureDefinition/ValidationHint&quot;,&quot;valueString&quot;:&quot;test 1&quot;,&quot;valueBoolean&quot;:false}]},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;val 2&quot;,&quot;display&quot;:&quot;val 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false,&quot;extension&quot;:[{&quot;url&quot;:&quot;https://example.org/fhir/StructureDefinition/ValidationHint&quot;,&quot;valueString&quot;:&quot;test 2&quot;,&quot;valueBoolean&quot;:false}]}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Don&apos;t Use Item Picker&quot;},{&quot;id&quot;:&quot;bdd32d96-09d0-44b1-afea-3661572038b7&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;newInactive&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;newInactive&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;a&quot;,&quot;display&quot;:&quot;a&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;b&quot;,&quot;display&quot;:&quot;b&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;c&quot;,&quot;display&quot;:&quot;c&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:true}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;cc79a0d5-bd47-44b8-8991-7c09f1b190f2&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;one&quot;,&quot;display&quot;:&quot;one&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;newInactive&quot;},{&quot;id&quot;:&quot;4d5b23ab-0d6f-4362-8fd2-66ce6676a17d&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;checkedDate&quot;,&quot;name&quot;:&quot;checkedDate&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;checkedDate&quot;,&quot;type&quot;:&quot;date&quot;,&quot;required&quot;:true,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;,&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;AllowTodayAndPastDate&quot;,&quot;valueBoolean&quot;:true}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;checkedDate&quot;},{&quot;id&quot;:&quot;3a2c692d-b991-431b-a821-38057faf660f&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;uncheckedDate&quot;,&quot;name&quot;:&quot;uncheckedDate&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;uncheckedDate&quot;,&quot;type&quot;:&quot;date&quot;,&quot;required&quot;:true,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;,&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;AllowTodayAndPastDate&quot;,&quot;valueBoolean&quot;:false}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;uncheckedDate&quot;},{&quot;id&quot;:&quot;25ff64ea-8e9a-40c9-8318-246921a3d30f&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;inActive TEsting&quot;,&quot;name&quot;:&quot;inActive TEsting&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;inActive TEsting&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;1&quot;,&quot;display&quot;:&quot;1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:true},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;2&quot;,&quot;display&quot;:&quot;2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;3&quot;,&quot;display&quot;:&quot;3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;inActive TEsting&quot;},{&quot;id&quot;:&quot;cd28f8a5-c14b-4bd6-9815-968837af53a8&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;Date checking&quot;,&quot;name&quot;:&quot;Date checking&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;620244&quot;,&quot;text&quot;:&quot;Date checking&quot;,&quot;type&quot;:&quot;date&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;,&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;AllowTodayAndPastDate&quot;,&quot;valueBoolean&quot;:false}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Date checking&quot;},{&quot;id&quot;:&quot;6a2e04a4-c209-4461-b576-bfb33cc0ba05&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Dont use item date&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Dont use item date&quot;,&quot;type&quot;:&quot;date&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;,&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;AllowTodayAndPastDate&quot;,&quot;valueBoolean&quot;:false}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Dont use item date&quot;},{&quot;id&quot;:&quot;2908adfe-3dc2-4ed8-a3f5-71aa51cae4d7&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;TESTDICT1&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;TESTDICT1&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;1&quot;,&quot;display&quot;:&quot;1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;2&quot;,&quot;display&quot;:&quot;2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;3&quot;,&quot;display&quot;:&quot;3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:true}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;TESTDICT1&quot;},{&quot;id&quot;:&quot;ff7b2ed9-47da-45b6-807e-d686ba530090&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Dont use item number&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Dont use item number&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Dont use item number&quot;},{&quot;id&quot;:&quot;4a8f9183-41a0-4df1-8e4d-315df7087a22&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Dont use item text area&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Dont use item text area&quot;,&quot;type&quot;:&quot;text&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Dont use item text area&quot;},{&quot;id&quot;:&quot;4911bca3-7280-4624-9818-04d44da1643e&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Dont use item text&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Dont use item text&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Dont use item text&quot;},{&quot;id&quot;:&quot;c7466244-2211-4c74-ad3b-61a6d7145f0d&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;multiselect&quot;,&quot;name&quot;:&quot;multiselect&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;multiselect&quot;,&quot;type&quot;:&quot;open-choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;1&quot;,&quot;display&quot;:&quot;1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;2&quot;,&quot;display&quot;:&quot;2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:true},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;3&quot;,&quot;display&quot;:&quot;3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:true},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;4&quot;,&quot;display&quot;:&quot;4&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl&quot;,&quot;valueBoolean&quot;:false,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/questionnaire-item-control&quot;,&quot;code&quot;:&quot;multiselect-dropdown&quot;,&quot;display&quot;:&quot;Multiselect-dropdown&quot;}],&quot;text&quot;:null}}]}],&quot;enableWhen&quot;:[{&quot;question&quot;:&quot;b570d7df-bdc5-4486-92a7-c3b4c28c3ab2&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;answerCoding&quot;:{&quot;code&quot;:&quot;b&quot;,&quot;display&quot;:&quot;b&quot;}}],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;multiselect&quot;},{&quot;id&quot;:&quot;9c098ea0-0c0c-48da-a6ec-59130bac5a87&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Ga One&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Ga One&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Ga One&quot;},{&quot;id&quot;:&quot;562ecff5-f200-4887-897d-6f121b570e49&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Ra One&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Ra One&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:true,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Ra One&quot;},{&quot;id&quot;:&quot;3277bc2d-ed51-49bf-965c-20e0f216b1ad&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Item gill&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;testing&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Item gill&quot;},{&quot;id&quot;:&quot;90d31938-bd7c-4ea5-9781-cb3339fe224d&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;NK Test One&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;NK One&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;NK Test One&quot;},{&quot;id&quot;:&quot;124d4171-411f-4ec6-b89f-6ff326fc2866&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Test One&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Ten One&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Test One&quot;},{&quot;id&quot;:&quot;bc3c68dc-26f8-4fdc-a571-e8f7dacc6fc4&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Ne One&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Ne&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Ne One&quot;},{&quot;id&quot;:&quot;0898e2e6-0ab2-400f-a9aa-a091f924c95f&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Request Type&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;364249&quot;,&quot;text&quot;:&quot;Request Type&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;ONE CALL - Aging Review&quot;,&quot;display&quot;:&quot;ONE CALL - Aging Review&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;ONE CALL - Aging Review (SEDGWICK PROTOCOL)&quot;,&quot;display&quot;:&quot;ONE CALL - Aging Review (SEDGWICK PROTOCOL)&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;ONE CALL - Comparison Review (with Aging)&quot;,&quot;display&quot;:&quot;ONE CALL - Comparison Review (with Aging)&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;ONE CALL - Diagnostic Imaging Review&quot;,&quot;display&quot;:&quot;ONE CALL - Diagnostic Imaging Review&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Request Type&quot;},{&quot;id&quot;:&quot;4cce54ad-534b-4869-80a4-c83f07a41600&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;NK NEW Test&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;320248&quot;,&quot;text&quot;:&quot;NK TEST&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;NK val 1&quot;,&quot;display&quot;:&quot;NK val 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;NK val 2&quot;,&quot;display&quot;:&quot;NK val 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;NK NEW Test&quot;},{&quot;id&quot;:&quot;1ea1264c-862a-4c83-bcad-968a1944cafb&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;userNk2&quot;,&quot;name&quot;:&quot;User nk2&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;134161&quot;,&quot;text&quot;:&quot;Enter Date&quot;,&quot;type&quot;:&quot;date&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;,&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;AllowTodayAndPastDate&quot;,&quot;valueBoolean&quot;:false}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;User nk2&quot;},{&quot;id&quot;:&quot;85643e66-65de-4631-9ac3-29f488015802&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;userNk&quot;,&quot;name&quot;:&quot;User nk&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;381179&quot;,&quot;text&quot;:&quot;Enter Date&quot;,&quot;type&quot;:&quot;date&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueDate&quot;:&quot;&quot;,&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;AllowTodayAndPastDate&quot;,&quot;valueBoolean&quot;:false}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;User nk&quot;},{&quot;id&quot;:&quot;56587b26-d2a3-4198-be78-2d13104553e0&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Test Item 1&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;957528&quot;,&quot;text&quot;:&quot;Test Item 1&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Test Item 1&quot;},{&quot;id&quot;:&quot;c7597fc1-4b16-448c-8bbf-e4218eea2be0&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;Test&quot;,&quot;name&quot;:&quot;Test Itemt&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;983608&quot;,&quot;text&quot;:&quot;Test Item&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Test Itemt&quot;},{&quot;id&quot;:&quot;4cafa768-5bba-48b4-9a10-ef2955830fbc&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Test Picker&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;921341&quot;,&quot;text&quot;:&quot;Test Picker&quot;,&quot;type&quot;:&quot;open-choice&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;val 1&quot;,&quot;display&quot;:&quot;val 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false,&quot;extension&quot;:[{&quot;url&quot;:&quot;https://example.org/fhir/StructureDefinition/ValidationHint&quot;,&quot;valueString&quot;:&quot;test 1&quot;,&quot;valueBoolean&quot;:false}]},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;val 2&quot;,&quot;display&quot;:&quot;val 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false,&quot;extension&quot;:[{&quot;url&quot;:&quot;https://example.org/fhir/StructureDefinition/ValidationHint&quot;,&quot;valueString&quot;:&quot;test 2&quot;,&quot;valueBoolean&quot;:false}]},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;val 3&quot;,&quot;display&quot;:&quot;val 3&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false,&quot;extension&quot;:[{&quot;url&quot;:&quot;https://example.org/fhir/StructureDefinition/ValidationHint&quot;,&quot;valueString&quot;:&quot;test 3&quot;,&quot;valueBoolean&quot;:false}]}],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Test Picker&quot;},{&quot;id&quot;:&quot;f5deea6d-f107-4ae5-8d3e-7d996978629f&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;Test&quot;,&quot;name&quot;:&quot;Test Radio&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;695077&quot;,&quot;text&quot;:&quot;Test Radio&quot;,&quot;type&quot;:&quot;choice&quot;,&quot;required&quot;:false,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Test 1&quot;,&quot;display&quot;:&quot;Test 1&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false},{&quot;valueCoding&quot;:{&quot;code&quot;:&quot;Test 2&quot;,&quot;display&quot;:&quot;Test 2&quot;,&quot;system&quot;:null},&quot;initialSelected&quot;:false}],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl&quot;,&quot;valueBoolean&quot;:false,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/questionnaire-item-control&quot;,&quot;code&quot;:&quot;radio-button&quot;,&quot;display&quot;:&quot;Radio Button&quot;}],&quot;text&quot;:&quot;A control where choices are listed with a button beside them. The button can be toggled to select or de-select a given choice. Selecting one item deselects all others.&quot;}}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Test Radio&quot;},{&quot;id&quot;:&quot;c29dac1a-9d27-44fe-95e9-80555294ed7b&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;Test&quot;,&quot;name&quot;:&quot;Radio Test&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;247000&quot;,&quot;text&quot;:&quot;Radio Test&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Radio Test&quot;},{&quot;id&quot;:&quot;a0461751-8903-4a08-ab7f-06f82464087b&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;airtel&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;READ&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;cutomer&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[{&quot;url&quot;:&quot;ValidationErrorMessage&quot;,&quot;valueString&quot;:&quot;Please Enter value&quot;,&quot;valueBoolean&quot;:false},{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/entryFormat&quot;,&quot;valueString&quot;:&quot;text&quot;,&quot;valueBoolean&quot;:false}]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;airtel&quot;},{&quot;id&quot;:&quot;787e120c-d2c3-4b8c-9544-11891191ad30&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;sub check item&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;airtel wala&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;sub check item&quot;},{&quot;id&quot;:&quot;8ec5dd25-c57c-40ce-976a-1d91bbe3ae33&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Case&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;268635&quot;,&quot;text&quot;:&quot;Case&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Case&quot;},{&quot;id&quot;:&quot;1f6be087-f850-4c91-83c7-28634f129d77&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Institution Name&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;FULL&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;627469&quot;,&quot;text&quot;:&quot;Institution Name&quot;,&quot;type&quot;:&quot;string&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Institution Name&quot;},{&quot;id&quot;:&quot;1b43f812-7b44-4f1b-95b0-20ec12f440d6&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;SG Test&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;READ&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;SG Test&quot;,&quot;type&quot;:&quot;text&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;SG Test&quot;},{&quot;id&quot;:&quot;c333cbd9-09e0-441a-a35d-ef9f1b4024ce&quot;,&quot;resourceType&quot;:&quot;Dictionary&quot;,&quot;type&quot;:&quot;item&quot;,&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;Amol 2&quot;,&quot;resource&quot;:&quot;ImagingStudy&quot;,&quot;color&quot;:&quot;#1b6ec2&quot;,&quot;defaultAccess&quot;:&quot;READ&quot;,&quot;item&quot;:[{&quot;linkId&quot;:&quot;&quot;,&quot;text&quot;:&quot;Text Area&quot;,&quot;type&quot;:&quot;text&quot;,&quot;required&quot;:null,&quot;max_length&quot;:&quot;&quot;,&quot;answerOption&quot;:[],&quot;extension&quot;:[]}],&quot;enableWhen&quot;:[],&quot;enableBehavior&quot;:&quot;any&quot;,&quot;groupName&quot;:&quot;Amol 2&quot;}]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">Template?type=dictionary</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="OperatingId" elementType="Header">
+                  <stringProp name="Header.name">OperatingId</stringProp>
+                  <stringProp name="Header.value">1234-dfdf-34343</stringProp>
+                </elementProp>
+                <elementProp name="CareCode" elementType="Header">
+                  <stringProp name="Header.name">CareCode</stringProp>
+                  <stringProp name="Header.value">null</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJvaWQiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdWIiOiJjZjllOTc5Yy03OWU2LTQ1ZWYtODZjNi05MDViYTAzNWIxNzgiLCJzdHJlZXRBZGRyZXNzIjoiMjgxOTRiYTAtNDVkZC00MzNlLWEwZDgtMjJkNmFkZjFmYzBkIiwiZmFtaWx5X25hbWUiOiJhaGlyZSIsIm5hbWUiOiJBbW9sIEFoaXJlIiwiZW1haWxzIjpbImFtb2wuYWhpcmVAY2FyZS5pbyJdLCJ0ZnAiOiJCMkNfMV9TaWduVXBJbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwic2NwIjoiYWNjZXNzX2FzX3VzZXIiLCJhenAiOiJhZmY1ZmM0OC1jYjE1LTQ0ZmEtYjMyMS0wZTQ5YTFjMzUxNGUiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2OTc3MDc5NTgsImF1ZCI6IjJhZTU4NWEzLTUxNDEtNDVkMC1iN2MzLWI3NTc3M2U1MjdiMSIsImV4cCI6MTY5Nzc2MTk1OCwiaXNzIjoiaHR0cHM6Ly9jYXJlaW9iMmMuYjJjbG9naW4uY29tLzgyYThmMDNiLTA1ODUtNDEzMC04YWQyLTY5ZTY0ZjYxYzlmYi92Mi4wLyIsIm5iZiI6MTY5NzcwNzk1OH0.lt8ckXffp2BTzwRRiiWNgskT90b_ISLhsmsOex787E8dI2DMIR3YdTRe4dpQ_2-ykmmxEJhQB1eoNRiQ6ge1617lsua__l67Y-hr_vhP6sA1sdkYMmq7VkjSVFf_Xh3H5XaJB-nvMEEYrQ96aN4d95GQuXYrLiRcepbxApRJaVm1O6mSKsuzC9HTZllaqMjv9F1KawhMP3d_PrOEIpTJf7fnJOALWSf70lY3287wP-Yy3AKJMuV9e7CAUL0kPAHxgEf_vRZbG-Ht8axU_nZB2s0ENo2vYQTipD7Bgh9TRWE1gsu2UJ42k0j8ufpqVEdoJ8xiXuO7sqQPOI3HminR1Q</stringProp>
+                </elementProp>
+                <elementProp name="OrganizationId" elementType="Header">
+                  <stringProp name="Header.name">OrganizationId</stringProp>
+                  <stringProp name="Header.value">3732341f-4725-4f9e-b848-daad66a02741</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/plain, */*; q=0.01</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
